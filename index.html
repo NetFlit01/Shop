@@ -1,27 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Магазин одежды</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="head" style="display: flex; justify-content: space-between;">
+    <h1> HARITA</h1>
+    <nav style="text-decoration: none;">
+        <ul class="top-menu">
+           <li> <a href="#about">О нас</a> </li>
+           <li>
+            <div class="dropdown">
+                <a href="#clothing" onmouseover="showLinks()">Товары</a>
+                <div class="dropdown-content" id="clothingDropdown">
+                    <a href="#Dresses">Платья</a>
+                    <a href="#">Вверхная одежда</a>
+                    <a href="#">Ссылка 3</a>
+                </div>
+             </div>
+            </li>
+           <li> <a href="#reviews">Отзывы</a> </li>
+           <li> <a href="#contacts">Контакты</a> </li>
+        </ul>
+    </nav>
 
+</div>
 
     <div class="container-image">
-    <div>
-        <img src="-GjYewdS2S4.jpg">
+        <img src="FOTO/4qhsMLgB9QM.jpg">
     </div>
-    <div>
-        <img src="2.png">
-    </div>
-    <div>
-        <img src="kyrtka2.jpg">
-    </div>
-        <div class="name-shop">
-            <h1> Harita - магазин одежды</h1>
-        </div>
-     </div>
 
     <div class=line_shadow></div>
 
@@ -34,7 +43,7 @@
 индивидуальный стиль через наши эксклюзивные коллекции. Независимо от того, что вы ищете - повседневные образы,
 вечерние наряды или пляжную одежду, "Harita" предлагает модные решения для вашего гардероба. Мы гордимся тем, что
 каждая вещь, которую мы предлагаем, сочетает в себе качество, элегантность и современные тенденции моды. Доверьтесь нам,
-и мы поможем вам выглядеть непревзойденно в любой ситуации!"</p>
+и мы поможем вам выглядеть непревзойденно в любой ситуации!</p>
     </div>
 
 
@@ -52,7 +61,7 @@
 
 <div class=line_shadow></div>
 
-<div class="dresses">
+<div class="dresses" id="Dresses">
         <h2>Платья</h2>
     <div class="list_dress">
         <div class="velvet_dress">
