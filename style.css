@@ -1,0 +1,158 @@
+.container-image {
+      display: flex;
+      align-items: center;
+    }
+
+.container-image img {
+      width: 100%;
+      height: auto;
+      display: inline;
+      margin: 20px;
+      position: relative;
+    }
+
+.name-shop{
+      position: absolute;
+      top: 10%;
+      left: 20%;
+      transform: translate(-70%, -70%);
+      font-style: italic;
+      font-size: 130%
+}
+
+.line_shadow{
+    margin: 20px 0;
+    padding: 0;
+    height: 10px;
+    border: none;
+    border-top: 1px solid #333;
+    box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+.about h1{
+  font-family: 'Brush Script MT', cursive;
+  font-size: 30px; /* устанавливаем крупный размер шрифта */
+  color: #0d0921; /* устанавливаем цвет текста */
+  text-align: center; /* центрируем текст */
+  text-transform: uppercase; /* преобразуем текст в верхний регистр */
+  letter-spacing: 2px; /* увеличиваем расстояние между буквами */
+}
+
+.about p {
+  font-family: Arial, sans-serif; /* выбираем шрифт */
+  font-size: 25px; /* устанавливаем размер шрифта */
+  line-height: 1.8; /* устанавливаем высоту строки */
+  color: #333; /* устанавливаем цвет текста */
+  margin-bottom: 20px; /* добавляем отступ снизу */
+  text-align: center; /* центрируем текст */
+}
+
+
+.dresses{
+
+    background-color: rgb(246, 246, 246);
+}
+
+.dresses{
+margin-top: -34px;
+}
+
+.dresses h2{
+    font-family: 'Gilroy-Regular';
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold
+}
+
+.list_dress{
+    display: flex;
+    align-items: center;
+}
+
+.dress_image{
+     width: 250px;
+     height: 360px;
+     margin: 30px;
+}
+
+.velvet_dress h3{
+    margin-left: 40px;
+    margin-top: -15px;
+}
+
+.dresses ul{
+    list-style-type: none;
+    margin-top: -15px;
+}
+
+
+
+header {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+        }
+
+
+
+
+/*body{
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,238,227,1) 42%, rgba(255,255,0,1) 100%);}
+.test{background: linear-gradient(90deg, rgba(9,94,121,0.8547794117647058) 0%, rgba(13,98,127,1) 0%, rgba(35,120,158,1) 44%, rgba(2,0,36,1) 94%);
+}*/
+.name{
+    font-style: gabriola;
+    margin-left: 120px;
+
+}
+.create-line {
+
+  border-top: 3px solid #32a1ce;
+}
+
+        header a {
+            color: white;
+            margin-right: 30px;
+            text-decoration: none;
+            font-size: 40px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+
+        .about-text {
+            font-size: 20px;
+            line-height: 1.5;
+        }
+
+        .clothing-block {
+            display: inline-block;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .clothing-image {
+            border-radius: 10px;
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+    opacity: 0;
+  animation: ani 2.5s forwards;
+
+        }
+
+        .clothing-description {
+            flex-grow: 1;
+            margin-left: 10px;
+        }
+
+@keyframes ani {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
