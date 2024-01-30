@@ -1,69 +1,105 @@
-<!DOCTYPE html>
 <html>
 <head>
-  <style>
-    .container-image {
-      display: flex;
-      align-items: center;
-      white-space: nowrap;
-      overflow-x: auto;
-      cursor: grab;
-    }
-    .container-image:active {
-      cursor: grabbing;
-    }
-    .container-image img {
-      width: 100%;
-      height: auto;
-      display: inline;
-    }
+    <meta charset="utf-8">
+    <style>
+.container-feedback {
+  flex: 0 0 30%;
+  border-radius: 50px;
+  padding: 15px;
+  background-color: #0d1b2a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.author-image {
+  border-radius: 50%; /* Добавляем скругленные углы для круглой формы */
+  width: 100px; /* Размер фотографии */
+  height: 100px; /* Размер фотографии */
+  margin-bottom: 10px; /* Отступ между фотографией и именем */
+}
+
+.text-feedback {
+  margin-top: -10px; /* Отступ между именем и комментарием */
+  font-size: 20px;
+  color: #FFFAFA;
+}
+
+.commentator-name{
+font-size: 30px;
+color: #FFFAFA;
+}
+
+.feedback{
+     display: flex;
+     justify-content: space-between;}
+
+
+.hidden-block {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Добавляем плавный переход для свойства opacity */
+}
+
+.visible {
+  opacity: 1;
+}
+
   </style>
-  <script>
-    window.onload = function() {
-      let container = document.querySelector('.container-image');
-      let isDown = false;
-      let startX;
-      let scrollLeft;
-
-      container.addEventListener('mousedown', (e) => {
-        isDown = true;
-        container.style.cursor = 'grabbing';
-        startX = e.pageX - container.offsetLeft;
-        scrollLeft = container.scrollLeft;
-      });
-
-      container.addEventListener('mouseleave', () => {
-        isDown = false;
-        container.style.cursor = 'grab';
-      });
-
-      container.addEventListener('mouseup', () => {
-        isDown = false;
-        container.style.cursor = 'grab';
-      });
-
-      container.addEventListener('mousemove', (e) => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - container.offsetLeft;
-        const walk = (x - startX) * 3;
-        container.scrollLeft = scrollLeft - walk;
-      });
-    };
-  </script>
 </head>
 <body>
-  <div class="container-image">
-    <div>
-      <img src="-GjYewdS2S4.jpg">
-    </div>
-    <div>
-      <img src="f4a9ab560118be29a588a0d7ccebb3f4.jpg">
-    </div>
-    <div>
-      <img src="kyrtka.jpg">
-    </div>
-    <!-- Add more image divs as needed -->
+
+<div class="container">
+  <div class="hidden-block">
+<div class="feedback">
+
+  <div class="container-feedback">
+  <div class="author">
+    <img src="Feedback/e76EYxZL7XY.jpg" alt="Elena" class="author-image">
+    <p class="commentator-name">- Анна</p>
   </div>
+  <p class="text-feedback">"Отличный выбор одежды! Все подошло идеально."</p>
+</div>
+
+    <div class="container-feedback">
+  <div class="author">
+    <img src="Feedback/roy-genrich.1024x1024.jpg" alt="Elena" class="author-image">
+    <p class="commentator-name">- Анна</p>
+  </div>
+  <p class="text-feedback">"Отличный выбор одежды! Все подошло идеально."</p>
+</div>
+
+
+  <div class="container-feedback">
+  <div class="author">
+    <img src="Feedback/PYWbKeatXaI.jpg" alt="Elena" class="author-image">
+    <p class="commentator-name">- Анна</p>
+  </div>
+  <p class="text-feedback">"Отличный выбор одежды! Все подошло идеально."</p>
+
+</div>
+</div>
+  </div>
+</div>
+
+<script>
+    document.addEventListener("scroll", function() {
+      var element = document.querySelector(".hidden-block");
+      var position = element.getBoundingClientRect();
+
+      if (position.top < window.innerHeight && position.bottom >= 0) {
+        element.classList.add("visible");
+      } else {
+        element.classList.remove("visible");
+      }
+    });
+  </script>
 </body>
+
 </html>

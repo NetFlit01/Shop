@@ -5,6 +5,8 @@
     <title>Магазин одежды</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
 <div class="head" style="display: flex; justify-content: space-between;">
     <h1> HARITA</h1>
@@ -13,11 +15,11 @@
            <li> <a href="#about">О нас</a> </li>
            <li>
             <div class="dropdown">
-                <a href="#clothing" onmouseover="showLinks()">Товары</a>
+                <a href="#clothing">Товары</a>
                 <div class="dropdown-content" id="clothingDropdown">
                     <a href="#Dresses">Платья</a>
-                    <a href="#">Вверхная одежда</a>
-                    <a href="#">Ссылка 3</a>
+                    <a href="#Outerwear">Вверхная одежда</a>
+                    <a href="#Sweater">Джемпера</a>
                 </div>
              </div>
             </li>
@@ -27,14 +29,15 @@
     </nav>
 
 </div>
-
+<div class="container-block">
     <div class="container-image">
         <img src="FOTO/4qhsMLgB9QM.jpg">
     </div>
+</div>
 
     <div class=line_shadow></div>
 
-    <div class="about">
+    <div class="about" id="about">
         <h1>О нас</h1>
 
         <p>Добро пожаловать в мир стиля и красоты вместе с "Harita"! Мы - команда энтузиастов моды, которая стремится
@@ -62,77 +65,271 @@
 <div class=line_shadow></div>
 
 <div class="dresses" id="Dresses">
-        <h2>Платья</h2>
-    <div class="list_dress">
-        <div class="velvet_dress">
-            <img src="Платье/Бархатноеjpg.jpg" class="dress_image">
-            <h3>БАРХАТНОЕ ПЛАТЬЕ</h3>
-            <ul>
+        <h2 class="clothes_name">Платья</h2>
+    <div class="list_clothes">
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="Платье/Бархатноеjpg.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">БАРХАТНОЕ ПЛАТЬЕ</h3>
+            <ul class="specifications">
                 <li>Цена: 2500</li>
                 <li>Размер: X, L, M</li>
             </ul>
         </div>
 
-        <div class="velvet_dress">
-            <img src="Платье/Бархатноеjpg.jpg" class="dress_image">
-            <h3>БАРХАТНОЕ ПЛАТЬЕ</h3>
-            <ul>
+        <div class="clothing_type" >
+            <div class="cloth_image">
+                <img src="Платье/Бархатноеjpg.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">БАРХАТНОЕ ПЛАТЬЕ</h3>
+            <ul class="specifications">
                 <li>Цена: 2500</li>
                 <li>Размер: X, L, M</li>
             </ul>
         </div>
 
-        <div class="velvet_dress">
-            <img src="Платье/Бархатноеjpg.jpg" class="dress_image">
-            <h3>БАРХАТНОЕ ПЛАТЬЕ</h3>
-            <ul>
+        <div class="clothing_type" >
+            <div class="cloth_image">
+                <img src="Платье/Бархатноеjpg.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">БАРХАТНОЕ ПЛАТЬЕ</h3>
+            <ul class="specifications">
                 <li>Цена: 2500</li>
                 <li>Размер: X, L, M</li>
             </ul>
         </div>
 
-        <div class="velvet_dress">
-            <img src="Платье/Бархатноеjpg.jpg" class="dress_image">
-            <h3>БАРХАТНОЕ ПЛАТЬЕ</h3>
-            <ul>
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="Платье/Бархатноеjpg.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">БАРХАТНОЕ ПЛАТЬЕ</h3>
+            <ul class="specifications">
                 <li>Цена: 2500</li>
                 <li>Размер: X, L, M</li>
             </ul>
         </div>
 
-        <div class="velvet_dress">
-            <img src="Платье/Бархатноеjpg.jpg" class="dress_image">
-            <h3>БАРХАТНОЕ ПЛАТЬЕ</h3>
-            <ul>
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="Платье/Бархатноеjpg.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">БАРХАТНОЕ ПЛАТЬЕ</h3>
+            <ul class="specifications">
                 <li>Цена: 2500</li>
                 <li>Размер: X, L, M</li>
             </ul>
         </div>
 
-        <div class="velvet_dress">
-            <img src="Платье/Бархатноеjpg.jpg" class="dress_image">
-            <h3>БАРХАТНОЕ ПЛАТЬЕ</h3>
-            <ul>
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="Платье/Бархатноеjpg.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">БАРХАТНОЕ ПЛАТЬЕ</h3>
+            <ul class="specifications">
                 <li>Цена: 2500</li>
                 <li>Размер: X, L, M</li>
             </ul>
         </div>
     </div>
-    </div>
+</div>
 
-<div class="OUTERWEAR">
-     <h2>Верхняя одежда</h2>
-    <div class="list_outerwear">
-        <div class="outerwear">
-            <img src="Платье/Бархатноеjpg.jpg" class="dress_image">
-            <h3>БАРХАТНОЕ ПЛАТЬЕ</h3>
-            <ul>
+<div class=line_shadow></div>
+
+<div class="outerwear" id="Outerwear">
+     <h2 class="clothes_name">Верхняя одежда</h2>
+    <div class="list_clothes">
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="Платье/Бархатноеjpg.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">БАРХАТНОЕ ПЛАТЬЕ</h3>
+            <ul class="specifications">
+                <li>Цена: 2500</li>
+                <li>Размер: X, L, M</li>
+            </ul>
+        </div>
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="Платье/Бархатноеjpg.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">БАРХАТНОЕ ПЛАТЬЕ</h3>
+            <ul class="specifications">
+                <li>Цена: 2500</li>
+                <li>Размер: X, L, M</li>
+            </ul>
+        </div>
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="Платье/Бархатноеjpg.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">БАРХАТНОЕ ПЛАТЬЕ</h3>
+            <ul class="specifications">
+                <li>Цена: 2500</li>
+                <li>Размер: X, L, M</li>
+            </ul>
+        </div>
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="Платье/Бархатноеjpg.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">БАРХАТНОЕ ПЛАТЬЕ</h3>
+            <ul class="specifications">
+                <li>Цена: 2500</li>
+                <li>Размер: X, L, M</li>
+            </ul>
+        </div>
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="Платье/Бархатноеjpg.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">БАРХАТНОЕ ПЛАТЬЕ</h3>
+            <ul class="specifications">
+                <li>Цена: 2500</li>
+                <li>Размер: X, L, M</li>
+            </ul>
+        </div>
+
+          <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="Платье/Бархатноеjpg.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">БАРХАТНОЕ ПЛАТЬЕ</h3>
+            <ul class="specifications">
                 <li>Цена: 2500</li>
                 <li>Размер: X, L, M</li>
             </ul>
         </div>
     </div>
-</div>>
+</div>
+
+<div class=line_shadow></div>
+
+<div class="sweater" id="Sweater">
+     <h2 class="clothes_name">Джемпера</h2>
+    <div class="list_clothes">
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="Платье/Бархатноеjpg.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">БАРХАТНОЕ ПЛАТЬЕ</h3>
+            <ul class="specifications">
+                <li>Цена: 2500</li>
+                <li>Размер: X, L, M</li>
+            </ul>
+        </div>
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="Платье/Бархатноеjpg.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">БАРХАТНОЕ ПЛАТЬЕ</h3>
+            <ul class="specifications">
+                <li>Цена: 2500</li>
+                <li>Размер: X, L, M</li>
+            </ul>
+        </div>
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="Платье/Бархатноеjpg.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">БАРХАТНОЕ ПЛАТЬЕ</h3>
+            <ul class="specifications">
+                <li>Цена: 2500</li>
+                <li>Размер: X, L, M</li>
+            </ul>
+        </div>
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="Платье/Бархатноеjpg.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">БАРХАТНОЕ ПЛАТЬЕ</h3>
+            <ul class="specifications">
+                <li>Цена: 2500</li>
+                <li>Размер: X, L, M</li>
+            </ul>
+        </div>
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="Платье/Бархатноеjpg.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">БАРХАТНОЕ ПЛАТЬЕ</h3>
+            <ul class="specifications">
+                <li>Цена: 2500</li>
+                <li>Размер: X, L, M</li>
+            </ul>
+        </div>
+
+          <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="Платье/Бархатноеjpg.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">БАРХАТНОЕ ПЛАТЬЕ</h3>
+            <ul class="specifications">
+                <li>Цена: 2500</li>
+                <li>Размер: X, L, M</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class=line_shadow></div>
+<div class="feedback">
+
+  <div class="container-feedback">
+  <div class="author">
+    <img src="Feedback/e76EYxZL7XY.jpg" alt="Elena" class="author-image">
+    <p class="commentator-name">- Анна</p>
+  </div>
+  <p class="text-feedback">"Отличный выбор одежды! Все подошло идеально."</p>
+</div>
+
+    <div class="container-feedback">
+  <div class="author">
+    <img src="Feedback/roy-genrich.1024x1024.jpg" alt="Elena" class="author-image">
+    <p class="commentator-name">- Анна</p>
+  </div>
+  <p class="text-feedback">"Отличный выбор одежды! Все подошло идеально."</p>
+</div>
+
+
+  <div class="container-feedback">
+  <div class="author">
+    <img src="Feedback/PYWbKeatXaI.jpg" alt="Elena" class="author-image">
+    <p class="commentator-name">- Анна</p>
+  </div>
+  <p class="text-feedback">"Отличный выбор одежды! Все подошло идеально."</p>
+</div>
+</div>
+
+<footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon" >
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="mail"></ion-icon>
+        </a></li>
+    </ul>
+    <p >&copy;2024 Магазин одежды Harita</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
 
 <div class="clothing-block">
             <div class="clothing-image">
@@ -155,7 +352,7 @@
         </div>
     </section>
 
-    <section id="about">
+    <section id="ab">
         <h2>О нас</h2>
         <p class="about-text">Магазин одежды предлагает широкий ассортимент стильной одежды
             для мужчин и женщин. Наша команда профессионалов поможет вам выбрать именно
@@ -174,9 +371,10 @@
         <p>Телефон: +1234567890</p>
     </section>
 
-    <footer>
+    <div>
         <p>© 2022 Магазин одежды. Все права защищены.</p>
-    </footer>
+    </div>
+
 </body>
 </html>
 
