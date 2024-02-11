@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин одежды</title>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body>
+<div class="header" style="display: flex; justify-content: space-between;">
+    <h1> HARITA</h1>
+    <nav style="text-decoration: none;">
+        <ul class="top-menu">
+           <li> <a href="#about">О нас</a> </li>
+           <li>
+            <div class="dropdown">
+                <a href="#clothing">Товары</a>
+                <div class="dropdown-content" id="clothingDropdown">
+                    <a href="#Dresses">Платья</a>
+                    <a href="#Outerwear">Верхняя одежда</a>
+                    <a href="#Sweater">Джемпера</a>
+                </div>
+             </div>
+            </li>
+           <li> <a href="#feedback">Отзывы</a> </li>
+           <li> <a href="#contacts">Контакты</a> </li>
+           <li><a href="php/view_cart.php">Корзина<span id="cartCount"></span></a></li>>
+        </ul>
+    </nav>
+
+</div>
+<div class="container-block">
+    <div class="container-image">
+        <img src="img/Header/main.jpg">
+    </div>
+</div>
+
+    <div class=line_shadow></div>
+
+    <div class="about" id="about">
+        <h1>О нас</h1>
+
+        <p>Добро пожаловать в мир стиля и красоты вместе с "Harita"! Мы - команда энтузиастов моды, которая стремится
+предоставить вам самые актуальные и качественные коллекции одежды. Наш магазин предлагает широкий выбор стильной одежды
+для модных и уверенных в себе женщин. Мы стремимся подчеркнуть вашу уникальность и помочь вам выразить свой
+индивидуальный стиль через наши эксклюзивные коллекции. Независимо от того, что вы ищете - повседневные образы,
+вечерние наряды или пляжную одежду, "Harita" предлагает модные решения для вашего гардероба. Мы гордимся тем, что
+каждая вещь, которую мы предлагаем, сочетает в себе качество, элегантность и современные тенденции моды. Доверьтесь нам,
+и мы поможем вам выглядеть непревзойденно в любой ситуации!</p>
+    </div>
+<div class=line_shadow></div>
+
+<div class="dresses" id="Dresses">
+        <h2 class="clothes_name">Платья</h2>
+    <div class="list_clothes">
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="img/Dresses/1.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">Бархатное платье</h3>
+            <form class="add-to-cart-form" method="post" action="php/add_to_cart.php">
+                <input type="hidden" name="item_id" value="1">
+                <input type="hidden" name="item_image" value="img/Dresses/1.jpg">
+                <input type="hidden" name="item_name" value="Бархатное платье">
+                <input type="hidden" name="item_price" value="2500">
+                <ul class="specifications">
+                    <li>Цена: 2500 руб.</li>
+                    <li>Размер:
+                        <select name="item_size">
+                            <option value="Размер не выбран">Выберите размер</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                    </li>
+                </ul>
+                <input class="label-add-cart" type="submit" value="Добавить в корзину" onclick="handleClick(this)">
+            </form>
+        </div>
+
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="img/Dresses/2.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">Вязанное платье</h3>
+            <form class="add-to-cart-form" method="post" action="php/add_to_cart.php">
+                <input type="hidden" name="item_id" value="2">
+                <input type="hidden" name="item_image" value="img/Dresses/2.jpg">
+                <input type="hidden" name="item_name" value="Вязанное платье">
+                <input type="hidden" name=" item_price" value="5000">
+
+                <ul class="specifications">
+                    <li>Цена: 5000 руб.</li>
+                    <li>Размер:
+                        <select name="item_size">
+                            <option value="Размер не выбран">Выберите размер</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </li>
+                </ul>
+                <input class="label-add-cart" type="submit" value="Добавить в корзину" onclick="handleClick(this)">
+            </form>
+        </div>
+
+        <div class="clothing_type" >
+            <div class="cloth_image">
+                <img src="img/Dresses/3.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">Трикотажное платье</h3>
+            <form class="add-to-cart-form" method="post" action="php/add_to_cart.php">
+                <input type="hidden" name="item_id" value="3">
+                <input type="hidden" name="item_image" value="img/Dresses/3.jpg">
+                <input type="hidden" name="item_name" value="Трикотажное платье">
+                <input type="hidden" name=" item_price" value="3000">
+
+                <ul class="specifications">
+                    <li>Цена: 3000 руб.</li>
+                    <li>Размер:
+                        <select name="item_size">
+                            <option value="Размер не выбран">Выберите размер</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                    </li>
+                </ul>
+                <input class="label-add-cart" type="submit" value="Добавить в корзину" onclick="handleClick(this)">
+            </form>
+        </div>
+
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="img/Dresses/4.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">Летнее платье</h3>
+            <form class="add-to-cart-form" method="post" action="php/add_to_cart.php">
+                <input type="hidden" name="item_id" value="4">
+                <input type="hidden" name="item_image" value="img/Dresses/4.jpg">
+                <input type="hidden" name="item_name" value="Летнее платье">
+                <input type="hidden" name=" item_price" value="3500">
+
+                <ul class="specifications">
+                    <li>Цена: 3500 руб.</li>
+                    <li>Размер:
+                        <select name="item_size">
+                            <option value="Размер не выбран">Выберите размер</option>
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                    </li>
+                </ul>
+                <input class="label-add-cart" type="submit" value="Добавить в корзину" onclick="handleClick(this)">
+            </form>
+        </div>
+
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="img/Dresses/5.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">Платье ANDREW KLOFF</h3>
+            <form class="add-to-cart-form" method="post" action="php/add_to_cart.php">
+                <input type="hidden" name="item_id" value="5">
+                <input type="hidden" name="item_image" value="img/Dresses/5.jpg">
+                <input type="hidden" name="item_name" value="Платье ANDREW KLOFF">
+                <input type="hidden" name=" item_price" value="4200">
+
+                <ul class="specifications">
+                    <li>Цена: 4200 руб.</li>
+                    <li>Размер:
+                        <select name="item_size">
+                            <option value="Размер не выбран">Выберите размер</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                    </li>
+                </ul>
+                <input class="label-add-cart" type="submit" value="Добавить в корзину" onclick="handleClick(this)">
+            </form>
+        </div>
+
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="img/Dresses/6.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">Платье Love Republic</h3>
+            <form class="add-to-cart-form" method="post" action="php/add_to_cart.php">
+                <input type="hidden" name="item_id" value="6">
+                <input type="hidden" name="item_image" value="img/Dresses/6.jpg">
+                <input type="hidden" name="item_name" value="Платье Love Republic">
+                <input type="hidden" name=" item_price" value="6000">
+
+                <ul class="specifications">
+                    <li>Цена: 6000 руб.</li>
+                    <li>Размер:
+                        <select name="item_size">
+                            <option value="Размер не выбран">Выберите размер</option>
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </li>
+                </ul>
+                <input class="label-add-cart" type="submit" value="Добавить в корзину" onclick="handleClick(this)">
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class=line_shadow></div>
+
+<div class="outerwear" id="Outerwear">
+     <h2 class="clothes_name">Верхняя одежда</h2>
+    <div class="list_clothes">
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="img/Outerwear/1.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">Мужская куртка</h3>
+            <form class="add-to-cart-form" method="post" action="php/add_to_cart.php">
+                <input type="hidden" name="item_id" value="7">
+                <input type="hidden" name="item_image" value="img/Outerwear//1.jpg">
+                <input type="hidden" name="item_name" value="Мужская куртка">
+                <input type="hidden" name="item_price" value="7000">
+                <ul class="specifications">
+                    <li>Цена: 7000 руб.</li>
+                    <li>Размер:
+                        <select name="item_size">
+                            <option value="Размер не выбран">Выберите размер</option>
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                    </li>
+                </ul>
+                <input class="label-add-cart" type="submit" value="Добавить в корзину" onclick="handleClick(this)">
+
+            </form>
+        </div>
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="img/Outerwear/2.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">Пуховик мужской Outventure</h3>
+            <form class="add-to-cart-form" method="post" action="php/add_to_cart.php">
+                <input type="hidden" name="item_id" value="8">
+                <input type="hidden" name="item_image" value="img/Outerwear/2.jpg">
+                <input type="hidden" name="item_name" value="Пуховик мужской Outventure">
+                <input type="hidden" name="item_price" value="2800">
+                <ul class="specifications">
+                    <li>Цена: 2800 руб.</li>
+                    <li>Размер:
+                        <select name="item_size">
+                            <option value="Размер не выбран">Выберите размер</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                    </li>
+                </ul>
+                <input class="label-add-cart" type="submit" value="Добавить в корзину" onclick="handleClick(this)">
+
+            </form>
+        </div>
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="img/Outerwear/3.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">Пальто утеплённое</h3>
+            <form class="add-to-cart-form" method="post" action="php/add_to_cart.php">
+                <input type="hidden" name="item_id" value="9">
+                <input type="hidden" name="item_image" value="img/Outerwear/3.jpg">
+                <input type="hidden" name="item_name" value="Пальто утеплённое">
+                <input type="hidden" name="item_price" value="5500">
+                <ul class="specifications">
+                    <li>Цена: 5500 руб.</li>
+                    <li>Размер:
+                        <select name="item_size">
+                            <option value="Размер не выбран">Выберите размер</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                    </li>
+                </ul>
+                <input class="label-add-cart" type="submit" value="Добавить в корзину" onclick="handleClick(this)">
+
+            </form>
+        </div>
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="img/Outerwear/4.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">Женская куртка демисезонная</h3>
+            <form class="add-to-cart-form" method="post" action="php/add_to_cart.php">
+                <input type="hidden" name="item_id" value="10">
+                <input type="hidden" name="item_image" value="img/Outerwear/4.jpg">
+                <input type="hidden" name="item_name" value="Женская куртка демисезонная">
+                <input type="hidden" name="item_price" value="3800">
+                <ul class="specifications">
+                    <li>Цена: 3800 руб.</li>
+                    <li>Размер:
+                        <select name="item_size">
+                            <option value="Размер не выбран">Выберите размер</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                    </li>
+                </ul>
+                <input class="label-add-cart" type="submit" value="Добавить в корзину" onclick="handleClick(this)">
+
+            </form>
+        </div>
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="img/Outerwear/5.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">Куртка утепленная Volkl</h3>
+            <form class="add-to-cart-form" method="post" action="php/add_to_cart.php">
+                <input type="hidden" name="item_id" value="11">
+                <input type="hidden" name="item_image" value="img/Outerwear/5.jpg">
+                <input type="hidden" name="item_name" value="Куртка утепленная Volkl">
+                <input type="hidden" name="item_price" value="5500">
+                <ul class="specifications">
+                    <li>Цена: 5500 руб.</li>
+                    <li>Размер:
+                        <select name="item_size">
+                            <option value="Размер не выбран">Выберите размер</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </li>
+                </ul>
+                <input class="label-add-cart" type="submit" value="Добавить в корзину" onclick="handleClick(this)">
+
+            </form>
+        </div>
+
+          <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="img/Outerwear/6.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">Пуховик женский adidas</h3>
+              <form class="add-to-cart-form" method="post" action="php/add_to_cart.php">
+                  <input type="hidden" name="item_id" value="12">
+                  <input type="hidden" name="item_image" value="img/Outerwear/6.jpg">
+                  <input type="hidden" name="item_name" value="Пуховик женский adidas">
+                  <input type="hidden" name="item_price" value="3700">
+                  <ul class="specifications">
+                      <li>Цена: 3700 руб.</li>
+                      <li>Размер:
+                          <select name="item_size">
+                              <option value="Размер не выбран">Выберите размер</option>
+                              <option value="M">M</option>
+                              <option value="L">L</option>
+                              <option value="XL">XL</option>
+                          </select>
+                      </li>
+                  </ul>
+                  <input class="label-add-cart" type="submit" value="Добавить в корзину" onclick="handleClick(this)">
+
+              </form>
+        </div>
+    </div>
+</div>
+
+<div class=line_shadow></div>
+
+<div class="sweater" id="Sweater">
+     <h2 class="clothes_name">Джемпера</h2>
+    <div class="list_clothes">
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="img/Jumpers/1.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">Толстовка женская Champion</h3>
+            <form class="add-to-cart-form" method="post" action="php/add_to_cart.php">
+                <input type="hidden" name="item_id" value="13">
+                <input type="hidden" name="item_image" value="img/Jumpers/1.jpg">
+                <input type="hidden" name="item_name" value="Толстовка женская Champion">
+                <input type="hidden" name="item_price" value="4500">
+                <ul class="specifications">
+                    <li>Цена: 4500 руб.</li>
+                    <li>Размер:
+                        <select name="item_size">
+                            <option value="Размер не выбран">Выберите размер</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                    </li>
+                </ul>
+                <input class="label-add-cart" type="submit" value="Добавить в корзину" onclick="handleClick(this)">
+
+            </form>
+        </div>
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="img/Jumpers/2.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">Джемпер флисовый Glissade</h3>
+            <form class="add-to-cart-form" method="post" action="php/add_to_cart.php">
+                <input type="hidden" name="item_id" value="14">
+                <input type="hidden" name="item_image" value="img/Jumpers/2.jpg">
+                <input type="hidden" name="item_name" value="Джемпер флисовый Glissade">
+                <input type="hidden" name="item_price" value="4000">
+                <ul class="specifications">
+                    <li>Цена: 4000 руб.</li>
+                    <li>Размер:
+                        <select name="item_size">
+                            <option value="Размер не выбран">Выберите размер</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </li>
+                </ul>
+                <input class="label-add-cart" type="submit" value="Добавить в корзину" onclick="handleClick(this)">
+
+            </form>
+        </div>
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="img/Jumpers/3.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">Джемпер флисовый Outventure</h3>
+            <form class="add-to-cart-form" method="post" action="php/add_to_cart.php">
+                <input type="hidden" name="item_id" value="15">
+                <input type="hidden" name="item_image" value="img/Jumpers/3.jpg">
+                <input type="hidden" name="item_name" value="Джемпер флисовый Outventure">
+                <input type="hidden" name="item_price" value="2500">
+                <ul class="specifications">
+                    <li>Цена: 3000 руб.</li>
+                    <li>Размер:
+                        <select name="item_size">
+                            <option value="Размер не выбран">Выберите размер</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </li>
+                </ul>
+                <input class="label-add-cart" type="submit" value="Добавить в корзину" onclick="handleClick(this)">
+
+            </form>
+        </div>
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="img/Jumpers/4.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">Джемпер флисовый Glissade</h3>
+            <form class="add-to-cart-form" method="post" action="php/add_to_cart.php">
+                <input type="hidden" name="item_id" value="16">
+                <input type="hidden" name="item_image" value="img/Jumpers/4.jpg">
+                <input type="hidden" name="item_name" value="Джемпер флисовый Glissade">
+                <input type="hidden" name="item_price" value="4850">
+                <ul class="specifications">
+                    <li>Цена: 4850 руб.</li>
+                    <li>Размер:
+                        <select name="item_size">
+                            <option value="Размер не выбран">Выберите размер</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </li>
+                </ul>
+                <input class="label-add-cart" type="submit" value="Добавить в корзину" onclick="handleClick(this)">
+
+            </form>
+        </div>
+        <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="img/Jumpers/5.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">Толстовка женская Demix</h3>
+            <form class="add-to-cart-form" method="post" action="php/add_to_cart.php">
+                <input type="hidden" name="item_id" value="17">
+                <input type="hidden" name="item_image" value="img/Jumpers/5.jpg">
+                <input type="hidden" name="item_name" value="Толстовка женская Demix">
+                <input type="hidden" name="item_price" value="5500">
+                <ul class="specifications">
+                    <li>Цена: 5500 руб.</li>
+                    <li>Размер:
+                        <select name="item_size">
+                            <option value="Размер не выбран">Выберите размер</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </li>
+                </ul>
+                <input class="label-add-cart" type="submit" value="Добавить в корзину" onclick="handleClick(this)">
+
+            </form>
+        </div>
+
+          <div class="clothing_type">
+            <div class="cloth_image">
+                <img src="img/Jumpers/6.jpg" class="clothes_image">
+            </div>
+            <h3 class="name">Джемпер флисовый Champion</h3>
+              <form class="add-to-cart-form" method="post" action="php/add_to_cart.php">
+                  <input type="hidden" name="item_id" value="18">
+                  <input type="hidden" name="item_image" value="img/Jumpers/6.jpg">
+                  <input type="hidden" name="item_name" value="Джемпер флисовый Champion">
+                  <input type="hidden" name="item_price" value="3900">
+                  <ul class="specifications">
+                      <li>Цена: 3900 руб.</li>
+                      <li>Размер:
+                          <select name="item_size">
+                              <option value="Размер не выбран">Выберите размер</option>
+                              <option value="S">S</option>
+                              <option value="M">M</option>
+                              <option value="L">L</option>
+                              <option value="XL">XL</option>
+                          </select>
+                      </li>
+                  </ul>
+                  <input class="label-add-cart" type="submit" value="Добавить в корзину" onclick="handleClick(this)">
+              </form>
+        </div>
+    </div>
+</div>
+
+<div class=line_shadow></div>
+
+<div class="title-feedback-text">
+    <h1>Комментарии наших клиентов</h1>
+</div>
+
+<div class="feedback" id="feedback">
+  <div class="container-feedback">
+  <div class="author">
+    <img src="img/Feedback/1.jpg" alt="Elena" class="author-image">
+    <p class="commentator-name">- Вероника</p>
+  </div>
+  <p class="text-feedback">"Отличный выбор одежды! Все подошло идеально."</p>
+</div>
+
+    <div class="container-feedback">
+  <div class="author">
+    <img src="img/Feedback/2.jpg" alt="Elena" class="author-image">
+    <p class="commentator-name">- Данил</p>
+  </div>
+  <p class="text-feedback">"Удобный магазин и хороший товар."</p>
+</div>
+
+
+  <div class="container-feedback">
+  <div class="author">
+    <img src="img/Feedback/3.jpg" alt="Elena" class="author-image">
+    <p class="commentator-name">- Ольга</p>
+  </div>
+  <p class="text-feedback">"Магазин одежды предлагает широкий выбор товаров высокого качества. Рекомендую для поиска стильной и качественной одежды."</p>
+</div>
+</div>
+
+<footer class="footer" id="contacts">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon" >
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="mail"></ion-icon>
+        </a></li>
+    </ul>
+    <p >&copy;2024 Магазин одежды Harita. Все права защищены.</p>
+  </footer>
+</body>
+</html>
+

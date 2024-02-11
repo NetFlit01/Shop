@@ -1,0 +1,171 @@
+.header {
+    padding: 5px;
+    background:#0d1b2a;
+    margin: -8px;
+    margin-top: -20px;
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+.header h1{
+    color: #ffffff;
+    font: 40px/40px 'Oswald', sans-serif;
+    margin-left: 100px;
+    margin-top: 25px;
+}
+
+form {
+    max-width: 400px; /* Ограничиваем ширину формы */
+    margin: 0 auto; /* Центрируем форму на странице */
+    font-family: Arial, sans-serif; /* Устанавливаем шрифт */
+}
+
+label {
+    margin-bottom: 5px; /* Отступ между меткой и полем ввода */
+    display: block; /* Размещаем метку на новой строке */
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px; /* Добавляем отступы вокруг поля ввода */
+    margin-bottom: 10px; /* Отступ между полями ввода */
+    border: 1px solid #ccc; /* Границы поля ввода */
+    border-radius: 5px; /* Добавляем скругленные углы */
+    box-sizing: border-box; /* Учитываем padding в ширине поля ввода */
+}
+
+input[type="submit"] {
+    background-color: #0d0921; /* Цвет фона кнопки отправки */
+    color: white; /* Цвет текста на кнопке */
+    padding: 15px 20px; /* Отступы кнопки отправки */
+    border: none; /* Убираем границы кнопки */
+    border-radius: 5px; /* Скругляем углы кнопки */
+    cursor: pointer; /* Указатель мыши при наведении */
+    transition: background-color 0.3s ease; /* Плавный переход для изменения цвета фона */
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: white; /* Цвет фона кнопки при наведении курсора */
+    color: black;
+    border: 2px solid #0d1b2a;
+}
+
+.return-page{
+    text-align: center;
+    margin-top: 50px;
+}
+.button{
+    padding: 10px 20px; /* Значения отступов для верхней и нижней стороны (10px) и правой и левой сторон (20px) */
+    background-color: #0d1b2a; /* Цвет фона кнопки */
+    color: white; /* Цвет текста на кнопке */
+    text-decoration: none; /* Убирает подчеркивание для ссылки */
+    border-radius: 5px; /* Закругление углов */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета фона при наведении курсора */
+}
+
+.button:hover {
+    background-color: white; /* изменение цвета фона при наведении курсора */
+    color: black; /* изменение цвета при наведении курсора */
+    border: 2px solid #0d1b2a;
+}
+
+
+.footer {
+    position: relative;
+    margin: -8px;
+    background: #0d1b2a;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 540px;
+}
+
+.social-icon{
+    position: relative;
+    display: flex;
+    margin-right: 75px;
+}
+
+.social-icon__item {
+    list-style: none;
+}
+
+.social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.social-icon__link:hover {
+    transform: translateY(-10px);
+}
+
+.footer p {
+    color: #fff;
+    margin-right: 50px;
+}
+
+.wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("../img/Footer/1.png");
+    background-size: 1000px 100px;
+
+}
+
+.wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-positon-x: 0px;
+    }
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: -1000px;
+    }
+    100% {
+        background-positon-x: 0px;
+    }
+}
