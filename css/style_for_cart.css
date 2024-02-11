@@ -1,0 +1,216 @@
+.header {
+         padding: 5px;
+         background:#0d1b2a;
+         margin: -8px;
+         margin-top: -20px;
+        height: 80px;
+        margin-bottom: 30px;
+}
+
+.header h1{
+    color: #ffffff;
+    font: 40px/40px 'Oswald', sans-serif;
+    margin-left: 100px;
+    margin-top: 25px;
+}
+
+.cart-container p{
+    font-size: 23px;
+}
+
+.text-empty-cart h1{
+
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    color: #555;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.img-empty-cart{
+    display: flex;
+    justify-content: center; /* Выравнивание по горизонтали */
+    align-items: center; /* Выравнивание по вертикали */
+
+}
+
+.img-empty-cart img{
+    width: 300px; /* Ширина изображения */
+    height: 300px;
+}
+
+.return-page{
+    text-align: center;
+
+}
+
+.button{
+    padding: 10px 20px; /* Значения отступов для верхней и нижней стороны (10px) и правой и левой сторон (20px) */
+    background-color: #0d1b2a; /* Цвет фона кнопки */
+    color: white; /* Цвет текста на кнопке */
+    text-decoration: none; /* Убирает подчеркивание для ссылки */
+    border-radius: 5px; /* Закругление углов */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета фона при наведении курсора */
+    border: 2px solid white;
+}
+
+.button:hover {
+    background-color: white; /* изменение цвета фона при наведении курсора */
+    color: black; /* изменение цвета при наведении курсора */
+    border: 2px solid #0d1b2a;
+}
+
+.cart-container{
+    display: flex; /* Распределение элементов в строку */
+    align-items: center; /* Выравнивание по вертикали */
+}
+
+.img-cart{
+    width: 250px;
+    height: 360px;
+}
+
+.cart-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cart-item {
+    width: calc(33% - 10px); /* Ширина каждого товара, с учетом отступов между ними */
+    text-align: center; /* Центрируем элементы внутри каждого товара */
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.line_shadow{
+    margin: 20px 0;
+    padding: 0;
+    height: 10px;
+    border: none;
+    border-top: 1px solid #333;
+    box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+.cart-text {
+    margin-top: 10px;
+    text-align: center; /* Выравнивание текста по центру */
+
+}
+
+.cart-text p {
+    margin: 5px 0;
+}
+
+.conteiner-sum{
+    display: flex; /* использовать flexbox */
+    align-items: center;
+}
+
+
+.sum {
+    font-size: 30px; /* Размер шрифта */
+    text-align: left; /* Выравнивание по центру */
+    margin: 30px; /* Внешние отступы */
+    font-weight: 500; /* Жирный шрифт */
+    font-family: Arial, sans-serif; /* Задаем шрифт */
+    padding-right: 100px ;
+}
+
+
+.footer {
+    position: relative;
+    margin: -8px;
+    background: #0d1b2a;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 440px;
+}
+
+.social-icon{
+    position: relative;
+    display: flex;
+    margin-right: 75px;
+}
+
+.social-icon__item {
+    list-style: none;
+}
+
+.social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.social-icon__link:hover {
+    transform: translateY(-10px);
+}
+
+.footer p {
+    color: #fff;
+    margin-right: 50px;
+}
+
+.wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("../img/Footer/1.png");
+    background-size: 1000px 100px;
+
+}
+
+.wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-positon-x: 0px;
+    }
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: -1000px;
+    }
+    100% {
+        background-positon-x: 0px;
+    }
+}

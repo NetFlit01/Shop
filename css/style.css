@@ -1,21 +1,32 @@
-.clothing-block {
-            display: inline-block;
-            justify-content: space-between;
-            margin-bottom: 10px;
-        }
+select {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    appearance: none;
+    background-position: right 10px center;
+    background-size: 20px;
+    background-color: #0d1b2a;
+    color: white;
+}
 
-.clothing-image {
-            border-radius: 10px;
-            width: 200px;
-            height: 200px;
-            background-color: lightgray;
-            opacity: 0;
-            animation: ani 2.5s forwards;}
 
-.clothing-description {
-            flex-grow: 1;
-            margin-left: 10px;
-        }
+.label-add-cart {
+    padding: 10px 20px; /* Устанавливаем отступы кнопки */
+    font-size: 16px; /* Устанавливаем размер шрифта */
+    color: #fff; /* Устанавливаем цвет текста */
+    background-color: #0d0921; /* Задаем цвет фона */
+    border: 1px solid #0d1b2a;
+    border-radius: 5px; /* Добавляем скругленные углы */
+    cursor: pointer; /* Устанавливаем указатель мыши при наведении */
+    transition: background-color 0.3s ease; /* Добавляем плавный переход для изменения цвета фона */
+    margin-left: 50px;
+}
+
+.label-add-cart:hover {
+    background-color: white; /* Изменяем цвет фона при наведении курсора */
+    color: black; /* Задаем новый цвет текста при наведении */
+}
+
 
 @keyframes ani {
   0% {opacity: 0;}
@@ -48,14 +59,6 @@
   }
 }
 
-.name-shop{
-      position: absolute;
-      top: 10%;
-      left: 20%;
-      transform: translate(-70%, -70%);
-      font-style: italic;
-      font-size: 130%
-}
 
 .line_shadow{
     margin: 20px 0;
@@ -67,11 +70,9 @@
 }
 
 .about h1{
-  font-family: 'Brush Script MT', cursive;
-  font-size: 30px; /* устанавливаем крупный размер шрифта */
+  font-size: 40px; /* устанавливаем крупный размер шрифта */
   color: #0d0921; /* устанавливаем цвет текста */
   text-align: center; /* центрируем текст */
-  text-transform: uppercase; /* преобразуем текст в верхний регистр */
   letter-spacing: 2px; /* увеличиваем расстояние между буквами */
 }
 
@@ -90,7 +91,7 @@
 
     background-color: rgb(220, 220, 220);
     margin-top: -36px;
-    height:650px;
+    height:670px;
     margin-bottom: -20px;
 }
 
@@ -106,16 +107,16 @@ margin-top: -34px;
 }
 
 .clothes_name{
-    font-family: 'Gilroy-Regular';
-    font-size: 40px;
     text-align: center;
-    font-weight: bold
+    font: 40px/40px 'Oswald', sans-serif;
+
 }
 
 .list_clothes{
     display: flex;
     align-items: center;
-
+    overflow: auto; /* или overflow: scroll; */
+    max-height: 80vh;
 }
 
 .clothes_image{
@@ -124,23 +125,20 @@ margin-top: -34px;
      margin: 30px;
 }
 
-
-
 .cloth_image {
-    display: inline-block; /* Строчно-блочный элемент */
     overflow: hidden; /* Скрываем всё за контуром */
     margin-bottom: 15px;
 
    }
-   .cloth_image img {
+
+.cloth_image img {
     transition: 1s; /* Время эффекта */
     display: block; /* Убираем небольшой отступ снизу */
    }
-   .cloth_image img:hover {
+
+.cloth_image img:hover {
     transform: scale(1.2); /* Увеличиваем масштаб */
    }
-
-
 
 .list_clothes .name {
     margin-left: 40px;
@@ -150,16 +148,18 @@ margin-top: -34px;
 .specifications{
     list-style-type: none;
     margin-top: -15px;
-
 }
 
-.head{
+.specifications li{
+    font-size: 20px;
+}
+
+.header{
 background:#0d1b2a;
-margin: -5px;
 margin-top: -15px;
 }
 
-.head h1{
+.header h1{
 color: #ffffff;
 font: 40px/40px 'Oswald', sans-serif;
 margin-left: 110px;
@@ -189,17 +189,6 @@ nav li {
 	position: relative;
     display: inline-block;
 }
-
-
-
-header {
-         display: flex;
-         justify-content: space-between;
-         padding: 5px;
-
-        }
-
-
 
 
 .dropdown {
@@ -236,34 +225,16 @@ margin: 0px;
 }
 
 
-.list_outerwear {
-    display: flex;
-    margin-right:40px;
-}
-
 .clothing_type {
-    margin-right:40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-
-.velvet_dress{
-margin-right:40px;
-}
-
 
 
 .contacts {
     background:#0d1b2a;
     text-align: center; /* Выравнивание текста по центру внутри блока */
-}
-
-.con h1{
-color: #ffffff;
-font: 40px/40px 'Oswald'
-}
-
-.con p{
-color: #ffffff;
-font: 40px/40px 'Oswald', sans-serif;
 }
 
 
@@ -305,18 +276,18 @@ color: #FFFAFA;
 
 .feedback{
      display: flex;
-     justify-content: space-between;}
+    justify-content: space-around;
+}
 
-
-
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
-
-
+.title-feedback-text h1{
+ text-align: center;
+ margin-bottom: 50px;
+ color: #0d1b2a;
+ font: 40px/40px 'Oswald', sans-serif;
+}
 
 .footer {
   position: relative;
-  width: 100%;
   background: #0d1b2a;
   min-height: 100px;
   padding: 20px 50px;
@@ -360,7 +331,7 @@ color: #FFFAFA;
   left: 0;
   width: 100%;
   height: 100px;
-  background: url("Footer/2.png");
+  background: url("../img/Footer/1.png");
   background-size: 1000px 100px;
 
 }
@@ -410,38 +381,3 @@ color: #FFFAFA;
     background-positon-x: 0px;
   }
 }
-
-/*body{
-background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,238,227,1) 42%, rgba(255,255,0,1) 100%);}
-.test{background: linear-gradient(90deg, rgba(9,94,121,0.8547794117647058) 0%, rgba(13,98,127,1) 0%, rgba(35,120,158,1) 44%, rgba(2,0,36,1) 94%);
-}*/
-.name{
-    font-style: gabriola;
-    margin-left: 120px;
-
-
-}
-.create-line {
-
-  border-top: 3px solid #32a1ce;
-}
-
-        header a {
-            color: white;
-            margin-right: 30px;
-            text-decoration: none;
-            font-size: 40px;
-        }
-
-        section {
-            margin-bottom: 20px;
-        }
-
-
-
-        .about-text {
-            font-size: 20px;
-            line-height: 1.5;
-        }
-
