@@ -69,11 +69,9 @@ select {
     box-shadow: 0 10px 10px -10px #8c8b8b inset;
 }
 
-.about h1{
-  font-size: 40px; /* устанавливаем крупный размер шрифта */
-  color: #0d0921; /* устанавливаем цвет текста */
-  text-align: center; /* центрируем текст */
-  letter-spacing: 2px; /* увеличиваем расстояние между буквами */
+.about-us{
+    text-align: center;
+    font: 40px/40px 'Oswald', sans-serif;
 }
 
 .about p {
