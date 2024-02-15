@@ -22,7 +22,7 @@ session_start();
     <input type="text" id="delivery-address" name="delivery-address" placeholder="Ул. Пушкина, д. 10, кв. 5">
     <label for="email">Электронная почта:</label>
     <input type="email" id="email" name="email" placeholder="example@example.com">
-    <input type="submit" value="Отправить">
+    <button class="button_for_sending" type="submit">Отправить</button>
 </form>
 
 <div class="return-page">

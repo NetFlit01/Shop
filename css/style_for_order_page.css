@@ -35,7 +35,7 @@ input[type="email"] {
     box-sizing: border-box; /* Учитываем padding в ширине поля ввода */
 }
 
-input[type="submit"] {
+.button_for_sending {
     background-color: #0d0921; /* Цвет фона кнопки отправки */
     color: white; /* Цвет текста на кнопке */
     padding: 15px 20px; /* Отступы кнопки отправки */
@@ -45,9 +45,10 @@ input[type="submit"] {
     transition: background-color 0.3s ease; /* Плавный переход для изменения цвета фона */
     margin-left: 150px;
     margin-top: 20px;
+    font: 16px 'Times New Roman';
 }
 
-input[type="submit"]:hover {
+.button_for_sending:hover {
     background-color: white; /* Цвет фона кнопки при наведении курсора */
     color: black;
     border: 2px solid #0d1b2a;
