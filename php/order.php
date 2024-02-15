@@ -6,7 +6,7 @@ session_start();
 <head>
     <title>Заказ</title>
     <meta charset="UTF-8">
-    <script src="../js/script.js"></script>
+    <script src="../js/checking_form.js"></script>
     <link rel="stylesheet" href="../css/style_for_order_page.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </head>

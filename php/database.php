@@ -101,5 +101,5 @@ else{
 mysqli_close($conn);
 session_unset();
 $_SESSION['cart'] = array(); // очищаем переменную $_SESSION['cart']
-header("Location: ../index.html");
+header("Location: ../index.html");// перенаправление на главную страницу
 ?>

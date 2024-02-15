@@ -30,7 +30,7 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
         echo '</div>';
         echo '<form method="post" action="remove_from_cart.php">';
         echo '<input type="hidden" name="index" value="' . $index . '">';
-        echo '<input class="button" type="submit" value="Удалить">';
+        echo '<button class="button" type="submit">Удалить</button>';
         echo '</form>';
         echo '</div>';
 
