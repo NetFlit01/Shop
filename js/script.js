@@ -1,3 +1,4 @@
+//Скрипт для проверки выбранного размера перед добавление в корзину
 $(document).ready(function(){
     $('.add-to-cart-form').submit(function(e){
         e.preventDefault();
@@ -18,6 +19,7 @@ $(document).ready(function(){
 });
 
 
+//Анимация изменения текста кнопки после успешного добавления товара
 function handleClick(button) {
     button.value = 'Добавлено';
     setTimeout(function() {
@@ -25,6 +27,8 @@ function handleClick(button) {
     }, 1000);
 }
 
+
+//Скрипт для проверки заполнения форм данными
 function validateForm(event) {
     var fullName = document.getElementById("full-name").value;
     var deliveryAddress = document.getElementById("delivery-address").value;

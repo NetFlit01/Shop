@@ -37,20 +37,20 @@ select {
 
 
 .label-add-cart {
-    padding: 10px 20px; /* Устанавливаем отступы кнопки */
-    font-size: 16px; /* Устанавливаем размер шрифта */
-    color: #fff; /* Устанавливаем цвет текста */
-    background-color: #0d0921; /* Задаем цвет фона */
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0d0921;
     border: 1px solid #0d1b2a;
-    border-radius: 5px; /* Добавляем скругленные углы */
-    cursor: pointer; /* Устанавливаем указатель мыши при наведении */
+    border-radius: 5px;
+    cursor: pointer;
     transition: background-color 0.3s ease; /* Добавляем плавный переход для изменения цвета фона */
     margin-left: 50px;
 }
 
 .label-add-cart:hover {
     background-color: white; /* Изменяем цвет фона при наведении курсора */
-    color: black; /* Задаем новый цвет текста при наведении */
+    color: black;
 }
 
 
@@ -83,6 +83,10 @@ select {
   }
 }
 
+.products{
+    cursor: pointer;
+}
+
 .line_shadow{
     margin: 20px 0;
     padding: 0;
@@ -98,12 +102,12 @@ select {
 }
 
 .about-description {
-    font-family: Arial, sans-serif; /* выбираем шрифт */
-    font-size: 25px; /* устанавливаем размер шрифта */
-    line-height: 1.8; /* устанавливаем высоту строки */
-    color: #333; /* устанавливаем цвет текста */
-    margin-bottom: 50px; /* добавляем отступ снизу */
-    text-align: center; /* центрируем текст */
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 .dresses{
@@ -153,7 +157,7 @@ select {
 }
 
 .cloth_image img:hover {
-    transform: scale(1.2); /* Увеличиваем масштаб */
+    transform: scale(1.2); /* Увеличение масштаба */
 }
 
 .list_clothes .name {
@@ -218,7 +222,7 @@ select {
 
 .contacts {
     background:#0d1b2a;
-    text-align: center; /* Выравнивание текста по центру внутри блока */
+    text-align: center;
 }
 
 /*Отзывы*/
@@ -240,14 +244,14 @@ select {
 }
 
 .author-image {
-    border-radius: 50%; /* Добавляем скругленные углы для круглой формы */
-    width: 100px; /* Размер фотографии */
-    height: 100px; /* Размер фотографии */
-    margin-bottom: 10px; /* Отступ между фотографией и именем */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
 }
 
 .text-feedback {
-    margin-top: -10px; /* Отступ между именем и комментарием */
+    margin-top: -10px;
     font-size: 20px;
     color: #FFFAFA;
 }
@@ -351,7 +355,7 @@ select {
         background-position-x: 1000px;
   }
   100% {
-        background-positon-x: 0px;
+        background-position-x: 0px;
   }
 }
 
@@ -360,6 +364,6 @@ select {
         background-position-x: -1000px;
   }
   100% {
-        background-positon-x: 0px;
+        background-position-x: 0px;
   }
 }
