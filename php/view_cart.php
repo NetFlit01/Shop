@@ -30,7 +30,7 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
         echo '</div>';
         echo '<form method="post" action="remove_from_cart.php">';
         echo '<input type="hidden" name="index" value="' . $index . '">';
-        echo '<button class="button" type="submit">Удалить</button>';
+        echo '<button class="delete_button" type="submit">Удалить</button>';
         echo '</form>';
         echo '</div>';
 
@@ -45,7 +45,7 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
     echo '</div>';  // закрываем последнюю строку
     echo '<div class="conteiner-sum">';
     echo '<p class="sum">Общая цена: ' . $total_price . ' рублей</p>';
-    echo '<a class="button" id="purchase" href="order.php">Заказать</a>';
+    echo '<a class="buy" id="purchase" href="order.php">Заказать</a>';
     echo '</div>';
 } else {
     echo '
@@ -62,7 +62,7 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
 ?>
 
 <div class="return-page">
-<a class="button" href="../index.html">Вернуться на главную страницу</a>
+<a class="back_to_main_page" href="../index.html">Вернуться на главную страницу</a>
 </div>
 
 
