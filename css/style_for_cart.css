@@ -6,6 +6,10 @@
     margin-bottom: 30px;
 }
 
+body{
+    margin: 0px;
+}
+
 .header h1{
     color: #ffffff;
     font: 40px/40px 'Oswald', sans-serif;
@@ -43,7 +47,7 @@
 
 }
 
-.button{
+.back_to_main_page, .buy{
     padding: 10px 20px;
     background-color: #0d1b2a;
     color: white; /
@@ -53,7 +57,23 @@
     border: 2px solid white;
 }
 
-.button:hover {
+.back_to_main_page:hover, .buy:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid #0d1b2a;
+}
+
+.delete_button{
+    padding: 10px 20px;
+    background-color: #0d1b2a;
+    color: white; /
+text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета фона при наведении курсора */
+    border: 2px solid white;
+}
+
+.delete_button:hover {
     background-color: white;
     color: black;
     border: 2px solid #0d1b2a;

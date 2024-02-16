@@ -6,6 +6,10 @@
     margin-bottom: 30px;
 }
 
+body{
+    margin: 0px;
+}
+
 .header h1{
     color: #ffffff;
     font: 40px/40px 'Oswald', sans-serif;
@@ -74,7 +78,9 @@ input[type="email"] {
 
 
 .footer {
-    position: relative;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background: #0d1b2a;
     min-height: 100px;
     padding: 20px 50px;
@@ -82,7 +88,6 @@ input[type="email"] {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 440px;
 }
 
 .social-icon{
