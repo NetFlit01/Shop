@@ -42,13 +42,12 @@ input[type="email"] {
     background-color: #0d0921;
     color: white;
     padding: 15px 20px;
-    border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease; /* Плавное изменение цвета фона при наведении курсора */
     margin-left: 150px;
     margin-top: 20px;
-    font: 16px 'Times New Roman';
+    font: 15px 'Times New Roman';
 }
 
 .button_for_sending:hover {
